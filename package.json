@@ -1,0 +1,24 @@
+{
+  "name": "avantiiva",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitsen03/Avantiiva.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bitsen03/Avantiiva/issues"
+  },
+  "homepage": "https://github.com/bitsen03/Avantiiva#readme",
+  "dependencies": {
+    "node-cron": "^3.0.3"
+  }
+}
