@@ -1,5 +1,6 @@
 import express, {Request, Response} from 'express';
 import cron from 'node-cron'
+import taskRouter from './routes/taskRoutes';
 
 const app = express();
 const port = 3075;
@@ -37,10 +38,5 @@ app.listen(port, (): void => {
   console.log(`Пример приложения прослушивает порт ${port}`);
 });
 
-app.get('/checkStatus', (req: Request, res: Response): void => {
-  if (statusTask){
-    res.send('status task: работает');
-  } else {
-    res.send('status task: не работает');
-  }
-})
+app.use('/task', taskRouter)
+
